@@ -9,6 +9,7 @@
 
                 <?php
                         require "koneksi.php";
+						$self = $_SERVER['PHP_SELF']; 
                         $query1 = "SELECT * FROM tabel_percobaan ORDER BY nim ";
                         $urut = 'asc';
                         $urutbaru = 'asc';
@@ -26,9 +27,9 @@
                 ?>
 				<h1 align=center>SORTING DENGAN SQL<h1><br>
                 <th>
-                        <td><a href='tugas.php?orderby=nim&urut=<?=$urutbaru;?>'>NIM</a></td>
-                        <td><a href='tugas.php?orderby=nama&urut=<?=$urutbaru;?>'>NAMA</a></td>
-                        <td><a href='tugas.php?orderby=alamat&urut=<?=$urutbaru;?>'>ALAMAT</a></td>
+                        <td><a href='tugas_prak.php?orderby=nim&urut=<?=$urutbaru;?>'>NIM</a></td>
+                        <td><a href='tugas_prak.php?orderby=nama&urut=<?=$urutbaru;?>'>NAMA</a></td>
+                        <td><a href='tugas_prak.php?orderby=alamat&urut=<?=$urutbaru;?>'>ALAMAT</a></td>
                 </th>
                                                         
                 <?php
